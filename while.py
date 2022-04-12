@@ -7,8 +7,8 @@
 
 def main():
     # this function uses a while loop
-    counter = 0
-    sum_number = 0
+    counter = 1
+    sum_number = 1
 
     # input
     number_as_string = input("Enter a positive integer: ")
@@ -16,10 +16,15 @@ def main():
     print("")
     try:
         number_as_int = int(number_as_string)
-        while counter <= number_as_int:
-            sum_number = sum_number + counter
-            counter = counter + 1
-        print("The sum is {0}".format(sum_number))
+        if number_as_int == 0:
+            print("The sum is 1")
+        elif number_as_int < 0:
+            print("Not a positive integer")
+        else:
+            while counter <= number_as_int:
+                sum_number = sum_number * counter
+                counter = counter + 1
+            print("The sum is {0}".format(sum_number))
     except Exception:
         print("¯\_(ツ)_/¯ sorry fam not an integer.")
     print("\nDone.")
