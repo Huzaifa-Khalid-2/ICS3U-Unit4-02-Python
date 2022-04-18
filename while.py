@@ -26,7 +26,7 @@ def main():
                 counter = counter + 1
             print("The sum is {0}".format(sum_number))
     except Exception:
-        print("¯\_(ツ)_/¯ sorry fam not an integer.")
+        print("( ͝סּ ͜ʖ͡סּ) umm That's some strange input dude pls enter a integer.")
     print("\nDone.")
 
 
